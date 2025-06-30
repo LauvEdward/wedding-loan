@@ -22,7 +22,7 @@ const Countdown = () => {
   return (
     <div className="countdown">
       💒 Còn {daysLeft} ngày nữa là đến lễ cưới!<br />
-      📅 Hôn lễ diễn ra vào Chủ thứ 6, 17 tháng 07 năm 2025
+      📅 Hôn lễ diễn ra vào Chủ thứ 6, 18 tháng 07 năm 2025
     </div>
   )
 }
