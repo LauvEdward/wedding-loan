@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/wedding/', // 👈 để các asset hoạt động đúng khi deploy vào subfolder
+  base: '/wedding-loan/', // 👈 để các asset hoạt động đúng khi deploy vào subfolder
 })
