@@ -1,0 +1,34 @@
+.wedding-gallery {
+    margin-top: 3rem;
+    padding: 1rem;
+    background: #fde7ef; /* nền hồng nhạt */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(216, 27, 96, 0.1); /* hồng đậm nhẹ */
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ad1457; /* hồng đậm trung tính */
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(216, 27, 96, 0.08); /* bóng nhẹ màu hồng */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}

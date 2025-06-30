@@ -1,0 +1,32 @@
+.countdown {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #6f42c1;
+}
+
+.audio-toggle {
+  margin-bottom: 1rem;
+}
+
+.audio-toggle button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f78fb3;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.audio-toggle button:hover {
+  background-color: #d63384;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wedding-title {
+  font-family: 'Great Vibes', cursive;
+}

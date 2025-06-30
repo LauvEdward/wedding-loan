@@ -1,0 +1,60 @@
+.events-section {
+    padding: 2rem 1rem;
+    background: #fce4ec; /* hồng nhạt */
+    color: #880e4f; /* chữ màu hồng đậm */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.events-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #ad1457; /* tiêu đề hồng trung */
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.event-day {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(216, 27, 96, 0.1); /* hồng đậm nhẹ */
+    border: 1px solid #f8bbd0;
+}
+
+.event-date {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #d81b60;
+}
+
+.event-block {
+    margin-bottom: 1.2rem;
+}
+
+.event-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: #ad1457;
+}
+
+.event-time {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    color: #bc477b;
+}
+
+.event-desc {
+    font-size: 0.9rem;
+    color: #6a1b45;
+    line-height: 1.5;
+}
