@@ -3,7 +3,7 @@ import './QRCodeSection.css'
 const QRCodeSection = () => {
     return (
         <div className="qr-section">
-            <h3 className="qr-title">📍 Quét mã để gửi lời chúc & mừng cưới</h3>
+            <h3 className="qr-title">📍 Hộp mừng cưới</h3>
             <img
                 src="./assets/qrcode.jpeg"
                 alt="Mã QR ngân hàng"
