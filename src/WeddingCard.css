@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     width: 98vw;
-    height: 98vh;
     background: #fce4ec; /* nền hồng nhạt */
     font-family: 'Montserrat', sans-serif;
     border: 8px solid #f8bbd0;

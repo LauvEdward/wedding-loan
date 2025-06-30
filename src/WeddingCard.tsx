@@ -15,7 +15,7 @@ function WeddingCard() {
             <div className="invitation-page right-page">
                 <p className="intro">TRÂN TRỌNG KÍNH MỜI</p>
                 <p className="intro-sub">Bạn và gia đình</p>
-                <p className="desc">Tới dự lễ thành hôn của 2 chúng tôi</p>
+                <p className="desc">Tới dự lễ vu quy của 2 chúng tôi</p>
                 <h2 className="name groom">Nguyễn Thị Châu Loan</h2>
                 <p className="and">&</p>
                 <h2 className="name bride">Lê Đình Phục</h2>

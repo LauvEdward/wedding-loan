@@ -1,44 +1,49 @@
-import { useEffect, useRef } from 'react'
+import { useRef, useState } from 'react'
 import WeddingCard from './WeddingCard'
-import WeddingGallery from "./WeddingGallery.tsx";
-import QRCodeSection from "./QRCodeSection.tsx";
-import WeddingEvents from "./WeddingEvents.tsx";
+import WeddingGallery from "./WeddingGallery.tsx"
+import QRCodeSection from "./QRCodeSection.tsx"
+import WeddingEvents from "./WeddingEvents.tsx"
+import './MusicOverlay.css'
+import Countdown from "./Countdown.tsx";
 
 function App() {
-    const audioRef = useRef<HTMLAudioElement>(null)
+  const audioRef = useRef<HTMLAudioElement>(null)
+  const [overlayVisible, setOverlayVisible] = useState(true)
 
-    useEffect(() => {
-        const tryPlayMusic = () => {
-            if (audioRef.current) {
-                audioRef.current.volume = 0.5
-                audioRef.current.play().catch((err) => {
-                    console.log('Chặn autoplay:', err.message)
-                })
-            }
-            document.removeEventListener('click', tryPlayMusic)
-        }
+  const handleOverlayClick = () => {
+    // Phát nhạc nếu audio tồn tại
+    if (audioRef.current) {
+      audioRef.current.play().catch((err) => {
+        console.warn('Trình duyệt chặn autoplay:', err)
+      })
+    }
+    // Ẩn overlay
+    setOverlayVisible(false)
+  }
 
-        // Gắn sự kiện click đầu tiên
-        document.addEventListener('click', tryPlayMusic)
-    }, [])
+  return (
+    <div style={{ backgroundColor: '#f5f8fa' }}>
+      <audio ref={audioRef} loop controls={false} preload="auto" style={{ display: 'none' }}>
+        <source src="./audio/wedding-music.mp3" type="audio/mp3" />
+        Trình duyệt không hỗ trợ phát nhạc.
+      </audio>
 
-    return (
-        <div style={{ backgroundColor: '#fde7ef' }}>
-            <audio
-                ref={audioRef}
-                loop
-                preload="auto"
-                style={{ display: 'none' }}
-            >
-                <source src="./audio/wedding-music.mp3" type="audio/mp3" />
-                Trình duyệt không hỗ trợ phát nhạc.
-            </audio>
-            <WeddingCard />
-            <WeddingEvents />
-            <WeddingGallery />
-            <QRCodeSection />
+      {overlayVisible && (
+        <div className="music-overlay" onClick={handleOverlayClick}>
+          <div className="overlay-content">
+            <p>🎆 Có nhau mình cưới</p>
+            <Countdown />
+          </div>
         </div>
-    )
+      )}
+
+      {/*<WeddingIntroText />*/}
+      <WeddingCard />
+      <WeddingGallery />
+      <WeddingEvents />
+      <QRCodeSection />
+    </div>
+  )
 }
 
 export default App

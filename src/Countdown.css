@@ -1,0 +1,8 @@
+.countdown {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ad1457;
+    animation: fadeIn 1s ease;
+    text-align: center;
+}
