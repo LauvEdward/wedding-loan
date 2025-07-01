@@ -35,7 +35,7 @@ function WeddingCard() {
                 <div className="parent-info">
                     <div>
                         <strong>Nhà Gái</strong><br />
-                        Họ Tên Mẹ: Phùng Thị Bình
+                        Họ Tên Mẹ: Phùng Thị Ngọc Bình
                     </div>
                     <div>
                         <strong>Nhà Trai</strong><br />

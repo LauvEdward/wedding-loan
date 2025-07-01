@@ -19,7 +19,6 @@ const WeddingEvents = () => {
                     </div>
                 </div>
 
-                {/* Ngày 28 */}
                 <div className="event-day">
                     <h3 className="event-date">18 tháng 7 (24 tháng 6 năm Ất Tỵ)</h3>
 
