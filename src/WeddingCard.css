@@ -174,7 +174,7 @@
 @media (max-width: 768px) {
     .invitation-book {
         flex-direction: column;
-        width: 100vw;
+        width: 98vw;
         border-width: 4px;
         border-radius: 0;
     }

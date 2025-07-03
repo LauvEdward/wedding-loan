@@ -28,6 +28,7 @@ function App() {
         <source src="./audio/wedding-music.mp3" type="audio/mp3" />
         Trình duyệt không hỗ trợ phát nhạc.
       </audio>
+      <WeddingCard />
 
       {overlayVisible && (
         <div className="music-overlay" onClick={handleOverlayClick}>
@@ -39,7 +40,6 @@ function App() {
       )}
 
       {/*<WeddingIntroText />*/}
-      <WeddingCard />
       <WeddingGallery />
       <WeddingEvents />
       <ClickableLeafletMap/>
