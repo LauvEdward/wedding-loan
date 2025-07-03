@@ -5,6 +5,7 @@ import QRCodeSection from "./QRCodeSection.tsx"
 import WeddingEvents from "./WeddingEvents.tsx"
 import './MusicOverlay.css'
 import Countdown from "./Countdown.tsx";
+import ClickableLeafletMap from "./ClickableMap.tsx";
 
 function App() {
   const audioRef = useRef<HTMLAudioElement>(null)
@@ -41,6 +42,7 @@ function App() {
       <WeddingCard />
       <WeddingGallery />
       <WeddingEvents />
+      <ClickableLeafletMap/>
       <QRCodeSection />
     </div>
   )
