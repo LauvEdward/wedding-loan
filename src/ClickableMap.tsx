@@ -19,7 +19,7 @@ const iconWithText = L.divIcon({
         word-break: break-word;
         box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       ">
-        55 Võ Văn Dũng, TT. Vĩnh Thạnh, Vĩnh Thạnh, Bình Định, Việt Nam
+        Thôn Định Tam, Xã Vĩnh Hảo, Huyện Vĩnh Thạnh, Tỉnh Bình Định
       </span>
     </div>
   `,
@@ -28,7 +28,7 @@ const iconWithText = L.divIcon({
   iconAnchor: [150, 100],
 });
 
-const position: [number, number] = [14.101449, 108.7807371];
+const position: [number, number] = [14.133141, 108.787063];
 const mapUrl = `https://www.google.com/maps?q=${position[0]},${position[1]}`;
 
 const ClickableLeafletMap = () => {
