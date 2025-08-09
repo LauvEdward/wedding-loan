@@ -1,11 +1,11 @@
 import { useRef, useState } from 'react'
 import WeddingCard from './WeddingCard'
 import WeddingGallery from "./WeddingGallery.tsx"
-import QRCodeSection from "./QRCodeSection.tsx"
+// import QRCodeSection from "./QRCodeSection.tsx"
 import WeddingEvents from "./WeddingEvents.tsx"
 import './MusicOverlay.css'
 import Countdown from "./Countdown.tsx";
-import ClickableLeafletMap from "./ClickableMap.tsx";
+// import ClickableLeafletMap from "./ClickableMap.tsx";
 
 function App() {
   const audioRef = useRef<HTMLAudioElement>(null)
@@ -42,8 +42,8 @@ function App() {
       {/*<WeddingIntroText />*/}
       <WeddingGallery />
       <WeddingEvents />
-      <ClickableLeafletMap/>
-      <QRCodeSection />
+      {/*<ClickableLeafletMap/>*/}
+      {/*<QRCodeSection />*/}
     </div>
   )
 }
